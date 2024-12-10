@@ -1,140 +1,156 @@
-# Online Bus Ticket Reservation System 🚍
+# 🚍 Online Bus Ticket Reservation System 🚌  
 
-This project is an **Online Bus Ticket Reservation System** built using **PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript**, with the **XAMPP** server. It enables users to book bus tickets, make payments, and view their bookings efficiently.
-
-## Features
-
-1. **User Authentication**:
-   - Secure login and registration for users.
-2. **Bus Selection**:
-   - View available buses and their details.
-3. **Seat Selection**:
-   - Choose seats from the available ones on the selected bus.
-4. **Payment Processing**:
-   - Input payment details (card number, phone number, and UPI ID) and confirm booking.
-5. **View Bookings**:
-   - View all booked tickets along with bus details.
-6. **Cancel Tickets**:
-   - Cancel booked tickets and make the seats available for future bookings.
+This project is an **Online Bus Ticket Reservation System** built using **PHP**, **MySQL**, **HTML**, **CSS**, and **JavaScript**, powered by the **XAMPP** server. It enables users to book bus tickets, make payments, and view their bookings efficiently. 🌟  
 
 ---
 
-## Technologies Used
+## ✨ Features  
 
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: PHP
-- **Database**: MySQL
-- **Server**: XAMPP (Apache & MySQL)
+1. 🔐 **User Authentication**:  
+   - Secure login and registration for users.  
 
----
+2. 🚌 **Bus Selection**:  
+   - View available buses and their details.  
 
-## Installation and Setup
+3. 🎫 **Seat Selection**:  
+   - Choose seats from the available ones on the selected bus.  
 
-1. **Download and Install XAMPP**:
-   - Download XAMPP from [Apache Friends](https://www.apachefriends.org/) and install it.
+4. 💳 **Payment Processing**:  
+   - Input payment details (card number, phone number, and UPI ID) and confirm booking.  
 
-2. **Clone the Repository**:
-   - Clone this project or download the ZIP and extract it to the `htdocs` directory inside your XAMPP installation folder.
+5. 📋 **View Bookings**:  
+   - View all booked tickets along with bus details.  
 
-3. **Import Database**:
-   - Open **phpMyAdmin** via `http://localhost/phpmyadmin`.
-   - Create a database named `final`.
-   - Import the `final.sql` file from the project directory to the `final` database.
-
-4. **Update Database Configuration**:
-   - Open the `db.php` file and ensure the database credentials match your XAMPP setup:
-     ```php
-     $servername = "localhost";
-     $username = "root"; // Default XAMPP username
-     $password = ""; // Default XAMPP password is empty
-     $dbname = "final";
-     ```
-
-5. **Run the Project**:
-   - Start Apache and MySQL from the XAMPP control panel.
-   - Access the project in your browser at `http://localhost/final`.
+6. ❌ **Cancel Tickets**:  
+   - Cancel booked tickets and make the seats available for future bookings.  
 
 ---
 
-## Project Workflow
+## 🛠️ Technologies Used  
 
-1. **Homepage**:
-   - Users can log in or register to access the system.
-2. **Bus Selection**:
-   - After logging in, users can view available buses and select one.
-3. **Seat Selection**:
-   - Select the desired seats for the chosen bus.
-4. **Payment**:
-   - Enter payment details and confirm the booking.
-5. **View Bookings**:
-   - Users can view all their bookings along with seat details and ticket ID.
-6. **Cancel Booking**:
-   - Users can cancel tickets, which will make the seats available for others.
+- **Frontend**: HTML, CSS, JavaScript  
+- **Backend**: PHP  
+- **Database**: MySQL  
+- **Server**: XAMPP (Apache & MySQL)  
 
 ---
 
-## File Structure
+## 🚀 Installation and Setup  
 
-```plaintext
-/final
-├── db.php                 # Database connection file
-├── header.php             # Header template
-├── footer.php             # Footer template
-├── index.php              # Homepage for login/registration
-├── register.php           # User registration page
-├── login.php              # User login page
-├── buses.php              # Bus selection page
-├── seat_selection.php     # Seat selection page
-├── payment.php            # Payment processing page
-├── view_booked.php        # View booked tickets page
-├── cancel_ticket.php      # Cancel tickets functionality
-├── css/
-│   └── styles.css         # CSS styles
-├── sql/
-│   └── final.sql          # Database dump file
-```
+1. **Download and Install XAMPP**:  
+   - Download XAMPP from [Apache Friends](https://www.apachefriends.org/) and install it.  
 
----
+2. **Clone the Repository**:  
+   - Clone this project or download the ZIP and extract it to the `htdocs` directory inside your XAMPP installation folder:  
+     ```bash  
+     git clone https://github.com/Subramanian7986/online-bus-ticket-reservation.git  
+     cd online-bus-ticket-reservation  
+     ```  
 
-## Database Schema
+3. **Import Database**:  
+   - Open **phpMyAdmin** via `http://localhost/phpmyadmin`.  
+   - Create a database named `final`.  
+   - Import the `final.sql` file from the project directory to the `final` database.  
 
-### Tables:
+4. **Update Database Configuration**:  
+   - Open the `db.php` file and ensure the database credentials match your XAMPP setup:  
+     ```php  
+     $servername = "localhost";  
+     $username = "root"; // Default XAMPP username  
+     $password = ""; // Default XAMPP password is empty  
+     $dbname = "final";  
+     ```  
 
-1. **users**:
-   - Stores user credentials (ID, username, email, password).
-
-2. **buses**:
-   - Stores bus details (ID, name, departure/arrival time, route, etc.).
-
-3. **seats**:
-   - Manages seat availability for each bus.
-
-4. **tickets**:
-   - Stores ticket booking details (ID, user ID, bus ID, seat number, booking date).
+5. **Run the Project**:  
+   - Start Apache and MySQL from the XAMPP control panel.  
+   - Access the project in your browser at `http://localhost/final`.  
 
 ---
 
-## Future Enhancements
+## 📜 Project Workflow  
 
-- Add email notifications for ticket confirmation and cancellations.
-- Introduce dynamic pricing based on seat demand.
-- Enhance the UI with a responsive design.
-- Integrate online payment gateways for real transactions.
+1. 🏠 **Homepage**:  
+   - Users can log in or register to access the system.  
+
+2. 🚌 **Bus Selection**:  
+   - After logging in, users can view available buses and select one.  
+
+3. 🎫 **Seat Selection**:  
+   - Select the desired seats for the chosen bus.  
+
+4. 💳 **Payment**:  
+   - Enter payment details and confirm the booking.  
+
+5. 📋 **View Bookings**:  
+   - Users can view all their bookings along with seat details and ticket ID.  
+
+6. ❌ **Cancel Booking**:  
+   - Users can cancel tickets, which will make the seats available for others.  
 
 ---
 
-## License
+## 📂 File Structure  
 
-This project is licensed under the [MIT License](LICENSE).
+```plaintext  
+/final  
+├── db.php                 # 📊 Database connection file  
+├── header.php             # 🖼️ Header template  
+├── footer.php             # 🖼️ Footer template  
+├── index.php              # 🏠 Homepage for login/registration  
+├── register.php           # ✍️ User registration page  
+├── login.php              # 🔑 User login page  
+├── buses.php              # 🚌 Bus selection page  
+├── seat_selection.php     # 🎫 Seat selection page  
+├── payment.php            # 💳 Payment processing page  
+├── view_booked.php        # 📋 View booked tickets page  
+├── cancel_ticket.php      # ❌ Cancel tickets functionality  
+├── css/  
+│   └── styles.css         # 🎨 CSS styles  
+├── sql/  
+│   └── final.sql          # 💾 Database dump file  
+```  
 
 ---
 
-## Author
+## 📊 Database Schema  
 
-- **Subramanian V**
-- Email: vsubramanianofficial@gmail.com
-- LinkedIn: https://www.linkedin.com/in/subramanian-v-a93089255/
+### Tables:  
+
+1. 👤 **users**:  
+   - Stores user credentials (ID, username, email, password).  
+
+2. 🚌 **buses**:  
+   - Stores bus details (ID, name, departure/arrival time, route, etc.).  
+
+3. 🎫 **seats**:  
+   - Manages seat availability for each bus.  
+
+4. 📋 **tickets**:  
+   - Stores ticket booking details (ID, user ID, bus ID, seat number, booking date).  
 
 ---
 
-This README should guide users through setting up and using your system effectively. Let me know if you need further customization!
+## 🎯 Future Enhancements  
+
+- 📧 Add email notifications for ticket confirmation and cancellations.  
+- 📈 Introduce dynamic pricing based on seat demand.  
+- 📱 Enhance the UI with a responsive design.  
+- 💰 Integrate online payment gateways for real transactions.  
+
+---
+
+## 📜 License  
+
+This project is licensed under the [MIT License](LICENSE).  
+
+---
+
+## 🙌 Author  
+
+- **Subramanian V**  
+- 📧 Email: [vsubramanianofficial@gmail.com](mailto:vsubramanianofficial@gmail.com)  
+- 💼 LinkedIn: [https://www.linkedin.com/in/subramanian-v-a93089255/](https://www.linkedin.com/in/subramanian-v-a93089255/)  
+
+---  
+
+Easily book your bus tickets and manage your journeys with this system! 🎉  
