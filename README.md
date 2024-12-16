@@ -104,15 +104,36 @@ This project is an **Online Bus Ticket Reservation System** built using **PHP**,
 ├── payment.php            # 💳 Payment processing page  
 ├── view_booked.php        # 📋 View booked tickets page  
 ├── cancel_ticket.php      # ❌ Cancel tickets functionality  
-├── css/  
-│   └── styles.css         # 🎨 CSS styles  
-├── sql/  
-│   └── final.sql          # 💾 Database dump file  
+├── styles.css  
 ```  
 
 ---
 
 ## 📊 Database Schema  
+
+Create a database named final
+
+Table buses
+
+![image](https://github.com/user-attachments/assets/a303f5b6-9688-4762-a612-f62d681f2a99)
+
+![image](https://github.com/user-attachments/assets/58c46326-c5f3-4000-ade2-16756db9024e)
+ 
+Table seats
+ ![image](https://github.com/user-attachments/assets/cd690f0c-f5b6-4641-9a6a-acfd20cb5959)
+ 
+ ![image](https://github.com/user-attachments/assets/77bb366a-91f1-4f72-96cf-5cb6c6b1d27c)
+ 
+Table tickets
+ ![image](https://github.com/user-attachments/assets/2698ab80-fae8-48c8-b653-9d88de4a4fe6)
+ 
+ ![image](https://github.com/user-attachments/assets/e01bffc1-f9c0-4d7c-b402-920f8abd7801)
+
+Table users
+ ![image](https://github.com/user-attachments/assets/d4c53c78-ad32-461e-81b9-2e6440b2fb48)
+ 
+ ![image](https://github.com/user-attachments/assets/7024869f-0f4c-43a3-85c7-68ba397d7e1a)
+
 
 ### Tables:  
 
@@ -154,3 +175,6 @@ This project is licensed under the [MIT License](LICENSE).
 ---  
 
 Easily book your bus tickets and manage your journeys with this system! 🎉  
+
+
+ 
